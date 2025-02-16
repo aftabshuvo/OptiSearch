@@ -9,8 +9,8 @@ const Settings = {
   'AI Assitant': {
     premium: {
       name: 'Is the user premium',
-      default: null,
-      active: false,
+      default: true,
+      active: true,
     },
     directchat: {
       name: 'Ask at search',
@@ -49,13 +49,13 @@ switch(WhichExtension) {
         'precise': { name: 'Precise' },
       },
       default: 'balanced',
-      active: false,
+      active: true,
     }
     Settings['AI Assitant']['bingInternalSearch'] = {
       name: "Internal search",
       title: "Enable internal search for Copilot to provide more comprehensive answers. This may take slightly longer.",
       default: true,
-      active: false,
+      active: true,
     }
     break;
   case 'bard':
@@ -64,7 +64,7 @@ switch(WhichExtension) {
       title: 'Google account number to use with Gemini',
       default: 0,
       min: 0,
-      active: false,
+      active: true,
     };
     break;
 }
